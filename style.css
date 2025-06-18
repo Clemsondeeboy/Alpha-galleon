@@ -24,11 +24,11 @@ body {
 }
 .navbar-nav.nav-item a {
   color: #bfbcbc;
-  width: 730px;
+  width: 700px;
   height: 40px;
   padding: 50px;
   margin: 30px !important;
-  gap: 50px !important;
+  gap: 70px !important;
   font: Montserrat;
   transition: all 0.3s ease-in-out;
 }
@@ -43,7 +43,7 @@ body {
 .nav-item a {
   transition: all 0.3s ease-in-out;
 }
-.nav-item a:hover .nav-linka {
+.nav-item a:hover .nav-link {
   color: #cfac39;
   transition: all 0.3s ease-in-out;
 }
@@ -51,8 +51,12 @@ body {
   width: 209px;
   height: 64px;
 }
+.navbar-nav{
+  gap: 25px;
+  margin-left: 50px;
+}
 
-a.btn {
+.don-btn{
   background: #e8d778;
   width: 140;
   height: 40;
@@ -60,17 +64,35 @@ a.btn {
   gap: 10px;
   border-width: 1px;
   padding: 10px;
-  margin-left: 100px;
+  font-size: 16px;
+  margin-left: 50px;
   outline-style: none;
   border: none;
+  color: #000;
+  text-decoration: none;
+  float: right !important;
   font: Montserrat;
 }
-a.btn:hover {
+.don-btn:hover {
   background: #ffff;
   color: #000;
   border: 1px solid #e8d778;
   outline-style: none;
 }
+
+.navbar-brand h4{
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+}
+
 .hero-section {
   position: relative;
   display: flex;
@@ -167,8 +189,8 @@ a.btn:hover {
   .navbar {
     height: auto;
   }
-  a.btn {
-    margin-left: 70px;
+  .don-btn{
+    margin-right: 35% !important;
     margin-bottom: 30px;
   }
 }
@@ -176,18 +198,19 @@ a.btn:hover {
   .navbar {
     padding: 0.5rem 1rem;
   }
-  .navbar-brand {
-    font-size: 1.2rem;
+  .navbar-brand h4{
+    font-size: 12px;
   }
   .navbar-brand img {
-    width: 100px;
-    height: 35px;
+    width: 50%;
+    height: 50%;
   }
   .navbar-nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: left;
+    gap: 10px;
   }
   .nav-item {
     margin-bottom: 0.5rem;
@@ -195,7 +218,7 @@ a.btn:hover {
   .nav-link {
     font-size: 1rem;
   }
-  .btn {
+  .don-btn{
     font-size: 1rem;
     padding: 0.3rem 1rem;
     justify-content: left;
@@ -214,7 +237,7 @@ a.btn:hover {
   left: 20%;
   margin-top: 10%;
 }
-.btn-discover {
+a.btn-discover{
   width: 140px;
   height: 40px;
   border-radius: 5px;
@@ -228,7 +251,7 @@ a.btn:hover {
   transition: all 0.5s ease-in-out;
   outline-style: none;
 }
-.btn-discover:hover {
+a.btn-discover:hover {
   outline-style: none;
   background: initial;
   border: 1px solid #e8d778;
@@ -338,7 +361,15 @@ a.btn:hover {
     left: 50%;
     position: absolute;
   }
+  .togather-image-carousel .play-button.pbot{
+    margin-top: 15% !important;
+  }
 }
+
+.togather-image-carousel .play-button.pbot{
+  margin-top: 30% !important;
+}
+
 .play-button {
   width: 90px;
   height: 90px;
@@ -397,7 +428,7 @@ a.btn:hover {
 .togather-carousel-image.active {
   display: block;
 }
-.togather-image-carousel:hover .play-button {
+.togather-image-carousel:hover .play-button.pbot {
   background-color: #302825;
 }
 .togather {
@@ -751,13 +782,14 @@ button {
   line-height: 23px;
   letter-spacing: 0%;
   color: #ccc;
+  margin-bottom: 40px;
 }
 .timer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 15px;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 .timer-box {
   border: 2px solid #d4af37;
@@ -788,6 +820,7 @@ button {
   letter-spacing: 0%;
   color: white;
 }
+
 a.btn-discover2 {
   background-color: #f3ce59;
   color: #2e2826;
@@ -798,7 +831,7 @@ a.btn-discover2 {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 a.btn-discover2:hover {
   background-color: #fafafa;
@@ -2071,9 +2104,9 @@ form label{
     margin-bottom: 20px;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 425px) and (max-width: 428px){
   .card span.tag{
-    top: 230px !important;
+    top: 218px !important;
      margin-left: 100px;
      margin-right: 100px;
     }
@@ -2091,6 +2124,26 @@ form label{
       margin-left: 100px;
       margin-right: 100px;
     }
+    .don-btn{
+      margin-right: 27% !important;
+      margin-bottom: 30px;
+    }
+    .car-div{
+      margin-bottom: 30px !important;
+    }
+    .play-button{
+      margin-top: 20% !important;
+      margin-left: 27% !important;
+    }
+    .togather-image-carousel .play-button.pbot{
+      margin-left: 10% !important;
+    }
+    .nssl .row{
+      margin: auto;
+    }
+    .navbar button {
+      margin-bottom: 20px;
+    }
 }
 @media (max-width: 375px){
   .card span.tag{
@@ -2101,6 +2154,13 @@ form label{
     .card button {
       margin-left: 80px;
       margin-right: 80px;
+    }
+    .don-btn{
+      margin-right: 24% !important;
+      margin-bottom: 30px;
+    }
+    .navbar button {
+      margin-bottom: 20px;
     }
 }
 @media (max-width: 320px){
@@ -2122,6 +2182,20 @@ form label{
     .card button {
       margin-left: 60px;
       margin-right: 60px;
+    }
+    .don-btn{
+      margin-right: 22% !important;
+      margin-bottom: 30px;
+    }
+    .navbar button {
+      margin-bottom: 15px !important;
+    }
+    .navbar{
+      width: 100% !important;
+    }
+    .navbar-nav{
+      /* gap: 25px; */
+      margin-left: 0px !important;
     }
 }
 
