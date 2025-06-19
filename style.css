@@ -2204,6 +2204,9 @@ form label{
     /* gap: 25px; */
     margin-left: 0px !important;
   }
+  .social-med a img {
+    display: block;
+  }
 
 }
 @media (max-width: 425px) and (max-width: 428px){
@@ -2288,6 +2291,9 @@ form label{
       height: 100%;
       display: block;
     }
+    .social-med a img {
+      display: block;
+    }
 }
 @media (max-width: 375px){
   .card span.tag{
@@ -2346,6 +2352,9 @@ form label{
       background: linear-gradient(rgba(50,50, 80, 0.489));
       width: 100%;
       height: 100%;
+      display: block;
+    }
+    .social-med a img {
       display: block;
     }
 }
@@ -2413,6 +2422,9 @@ form label{
     .gallery-img8 p{
       width: 100%;
       height: 100%;
+      display: block;
+    }
+    .social-med a img {
       display: block;
     }
 }
