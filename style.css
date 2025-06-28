@@ -2453,3 +2453,108 @@ form label{
   background-color: initial;
   border: 1px solid #e8d778;
 }
+
+/* Target all MacBook screen sizes */
+@media screen and (max-width: 1366px) {
+  /* Styles for MacBook Air 11" and smaller */
+  .nssl.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .card span.tag{
+    top: 250px !important;
+     margin-left: 50px;
+    }
+    .card button {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .custom-progress-bar{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 1512px) {
+  /* Styles for MacBook Pro 14" and smaller */
+  .nssl.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card span.tag{
+    top: 150px !important;
+     margin-left: 50px;
+    }
+    .card button {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .custom-progress-bar{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+  /* Styles for 13"-15" MacBooks */
+  .nssl.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .card span.tag{
+    top: 160px !important;
+     margin-left: 50px;
+    }
+    .card button {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .custom-progress-bar{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+  /* Styles for older/smaller MacBooks like Air 11" */
+  .nssl.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card span.tag{
+    top: 170px !important;
+     margin-left: 50px;
+    }
+    .card button {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .custom-progress-bar{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 1032px) {
+  /* Styles for older/smaller MacBooks like Air 11" */
+  .nssl.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card span.tag{
+    top: 180px !important;
+     margin-left: 50px;
+    }
+    .card button {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .custom-progress-bar{
+      width: 100%;
+    }
+  
+}
+
